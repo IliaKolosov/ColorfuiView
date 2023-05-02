@@ -9,11 +9,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var changeView: UIView!
+    
+    @IBOutlet var redSlidir: UISlider!
+    @IBOutlet var greenSlider: UISlider!
+    @IBOutlet var blueSlidir: UISlider!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        redSlidir.minimumValue = 0
+        redSlidir.maximumValue = 100
+       
     }
 
-
+    @IBAction func ControlRedSidir() {
+       
+    }
+    
+    @IBAction func ControlGreenSlider() {
+    }
+    
+    @IBAction func ControlBlueSlidir() {
+    }
+   
 }
 
