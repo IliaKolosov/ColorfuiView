@@ -54,6 +54,9 @@
                                 <subviews>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gS3-dl-kQr">
                                         <rect key="frame" x="6" y="98" width="187" height="31"/>
+                                        <connections>
+                                            <action selector="ControlBlueSlidir" destination="BYZ-38-t0r" eventType="valueChanged" id="nER-Ys-Sag"/>
+                                        </connections>
                                     </slider>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="YnE-T4-iQ2">
                                         <rect key="frame" x="6" y="0.0" width="187" height="31"/>
@@ -111,7 +114,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="YvF-NH-mLE" firstAttribute="centerY" secondItem="cE6-vn-MXM" secondAttribute="centerY" id="9Sr-lg-sMd"/>
                             <constraint firstItem="YvF-NH-mLE" firstAttribute="top" secondItem="cE6-vn-MXM" secondAttribute="top" id="Ate-b7-39W"/>
@@ -130,8 +133,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="blueLabelView" destination="3qg-rZ-czX" id="zXU-Yh-hp4"/>
                         <outlet property="blueSlidir" destination="gS3-dl-kQr" id="H38-IJ-VVh"/>
                         <outlet property="changeView" destination="Vo8-c7-Hpi" id="Qum-T6-8cW"/>
+                        <outlet property="greenLabelView" destination="hXF-Kr-6hp" id="aEu-0s-aF8"/>
                         <outlet property="greenSlider" destination="AwC-yi-47e" id="sQD-DU-yHX"/>
                         <outlet property="redLabelView" destination="Sa1-dr-WSP" id="gEx-Xy-sdD"/>
                         <outlet property="redSlidir" destination="YnE-T4-iQ2" id="jUw-Vv-oWi"/>
@@ -143,8 +148,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
